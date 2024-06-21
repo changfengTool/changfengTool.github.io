@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <title>昶鋒刀具有限公司</title>
+    <link href="//fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <!--    sweetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 引入 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 引入 Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- 引入 Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--bootstrap-->
+    <!--    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
+    <!--bootstrap-->
+    <!--    分頁內容圖片css-->
+    <style>
+        /* CSS used here will be applied after bootstrap.css */
+        .carousel {
+            margin-top: 20px;
+        }
+
+        .item .thumb {
+            width: 25%;
+            cursor: pointer;
+            float: left;
+        }
+
+        .item .thumb img {
+            width: 100%;
+            margin: 2px;
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+    </style>
+    <!--    分頁內容引入-->
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <!--    分頁內容引入-->
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--bootstrap-->
+
+</head>
+<body class="post-template-default single single-post postid-100 single-format-standard group-blog">
+
+
+<div id="content" class="site-content">
+    <div class="container">
+        <div class="row">
+            <div id="primary" class="content-area col-md-12">
+                <main id="main" class="site-main" role="main">
+
+                    <style>
+                        .img_box {
+                            text-align: center;
+                            vertical-align: top;
+                        }
+
+                        .img_box img {
+                            border: 2px solid #ddd;
+                            border-radius: 3px;
+                            width: 80% !important;
+                        }
+
+                        /*-----------------------------------------*/
+                        .image_box {
+                            text-align: center;
+                            vertical-align: top;
+                            width: 75%;
+                            margin: 0 auto;
+                            overflow: hidden;
+                            position: relative;
+
+                        }
+
+                        .image_box img {
+                            cursor: pointer;
+                            width: 100%;
+                            transition: all 0.6s;
+                        }
+
+                        .image_box:hover img {
+                            transform: scale(1.4);
+                        }
+
+                        .image_box:hover .image_box_content {
+                            bottom: 0px;
+                            transition: all 0.3s;
+                        }
+
+                        .image_box_content {
+                            position: absolute;
+                            width: 100%;
+                            height: 140px;
+                            bottom: -90px;
+                            background: #fff;
+                            opacity: 0.9;
+                            transition: all 0.3s;
+                        }
+
+                        .image_box_content h2 {
+                            margin: 0px;
+                            padding: 0px;
+                            text-align: center;
+                            line-height: 50px;
+                            font-size: 16px !important;
+                            color: #333;
+
+                        }
+
+                        .image_box_content a.view, .image_box_content a.view_more {
+                            display: block;
+                            width: 80px;
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 14px;
+                            color: #fff;
+                            text-align: center;
+                            background: #c01818;
+                            margin: 0 auto;
+                            margin-top: 10px;
+                            border-radius: 5px;
+
+                        }
+
+                        /*-----------------------------------------*/
+                        .img_row, .img_row_category {
+                            margin-top: 30px;
+                            text-align: left;
+                        }
+
+                        .img_column {
+                            width: 33%;
+                            display: inline-block;
+                            text-align: center;
+                            margin-bottom: 35px;
+                            vertical-align: top;
+                        }
+
+                        a.prev_product, a.next_product {
+
+                            color: #fff;
+                            background: #222;
+                            border-radius: 5px;
+                            margin-bottom: 5px;
+                        }
+
+                        a.prev_product {
+                            padding-right: 10px;
+                            float: left;
+                        }
+
+                        a.next_product {
+                            float: right;
+                            padding-left: 10px;
+                        }
+
+                        .next_product img, .prev_product img {
+                            width: 40px !important;
+                        }
+
+                        @media (max-width: 1024px) {
+                            .img_column {
+                                width: 48%;
+                            }
+                        }
+
+                        @media (max-width: 720px) {
+                            .image_box {
+                                width: 95%;
+                            }
+
+                            .img_column {
+                                width: 100%;
+                            }
+                        }
+                    </style>
+                    <article id="post-100"
+                             class="post-100 post type-post status-publish format-standard has-post-thumbnail hentry category-bussiness_service post-item clearfix">
+                        <!--分頁欄位-->
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item  active ">
+                                <a class="nav-link  " aria-current="page" href="product01.html">破碎機</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product02.html">粉碎機</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product03.html">怪手</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product04.html">紙業長刀</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product05.html">造粒機</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product06.html">槌磨機</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product07.html">單軸撕碎機</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="product08.html">其他刀具</a>
+                            </li>
+
+                            <!--            <li class="nav-item dropdown">-->
+                            <!--                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>-->
+                            <!--                <ul class="dropdown-menu">-->
+                            <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            <!--                    <li>-->
+                            <!--                        <hr class="dropdown-divider">-->
+                            <!--                    </li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+                            <!--                </ul>-->
+                            <!--            </li>-->
+                            <!--            <li class="nav-item dropdown">-->
+                            <!--                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
+                            <!--                   aria-expanded="false">Dropdown</a>-->
+                            <!--                <ul class="dropdown-menu">-->
+                            <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                            <!--                    <li>-->
+                            <!--                        <hr class="dropdown-divider">-->
+                            <!--                    </li>-->
+                            <!--                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
+                            <!--                </ul>-->
+                            <!--            </li>-->
+                            <!--            <li class="nav-item">-->
+                            <!--                <a class="nav-link" href="#">Link</a>-->
+                            <!--            </li>-->
+                            <!--            <li class="nav-item">-->
+                            <!--                <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+                            <!--            </li>-->
+                        </ul>
+                        <!--分頁欄位-->
+                        <header class="entry-header">
+                            <h1 class="custom-entry-title" style="text-align: center;"><span><i
+                                    class="fab fa-product-hunt"></i> TCT鎢鋼裁切刀系列</span></h1>
+                            <div class="entry-meta">
+                            </div><!-- .entry-meta -->
+                        </header><!-- 產品名稱 標題 -->
+
+                        <div class='img_box col-md-12' style='margin-bottom:30px;'>
+                            <img width="768" height="576"
+                                 src="https://www.keming.com.tw/wp-content/uploads/202101131024551.jpg"
+                                 class="attachment-medium_large size-medium_large wp-post-image" alt=""
+                                 srcset="https://www.keming.com.tw/wp-content/uploads/202101131024551.jpg 768w, https://www.keming.com.tw/wp-content/uploads/202101131024551-300x225.jpg 300w"
+                                 sizes="(max-width: 768px) 100vw, 768px"/></div>  <!--   產品大圖-->
+
+                        <div class="entry-content col-md-12">
+                            <div>
+                            </div>
+                        </div><!-- .entry-content 沒東西 不知道要幹嘛 -->
+
+                        <div class="entry-content" style='text-align:left;margin-top:30px;'> <!-- 各別小圖-->
+                            <div class='img_row' id='img_row'>
+                                <div class='img_column'>
+                                    <div class='image_box'>
+                                        <img src='https://www.keming.com.tw/wp-content/uploads/TCT橡膠切刀...-450x450-1-450x450.jpg'
+                                             class='img' alt='T1.TCT鎢鋼切刀'
+                                             ori='https://www.keming.com.tw/wp-content/uploads/TCT橡膠切刀...-450x450-1.jpg'>
+                                        <div class='image_box_content'>
+                                            <h2>T1.TCT鎢鋼切刀</h2>
+                                            <a href='javascript:;' class='view' style='margin-top:10px;'>產品瀏覽</a>
+                                        </div>
+                                    </div>
+                                </div> <!-- 小圖Ａ-->
+                                <div class='img_column'>
+                                    <div class='image_box'>
+                                        <img src='https://www.keming.com.tw/wp-content/uploads/TCT切刀-450x450-1-450x450.jpeg'
+                                             class='img' alt='T2.TCT鎢鋼切刀'
+                                             ori='https://www.keming.com.tw/wp-content/uploads/TCT切刀-450x450-1.jpeg'>
+                                        <div class='image_box_content'>
+                                            <h2>T2.TCT鎢鋼切刀</h2>
+                                            <a href='javascript:;' class='view' style='margin-top:10px;'>產品瀏覽</a>
+                                        </div>
+                                    </div>
+                                </div><!-- 小圖Ｂ-->
+                                <div class='img_column'>
+                                    <div class='image_box'>
+                                        <img src='https://www.keming.com.tw/wp-content/uploads/TCT鎢鋼粉碎刀-1-450x450.jpg'
+                                             class='img' alt='T3.TCT鎢鋼粉碎刀'
+                                             ori='https://www.keming.com.tw/wp-content/uploads/TCT鎢鋼粉碎刀-1-768x513.jpg'>
+                                        <div class='image_box_content'>
+                                            <h2>T3.TCT鎢鋼粉碎刀</h2>
+                                            <a href='javascript:;' class='view' style='margin-top:10px;'>產品瀏覽</a>
+                                        </div>
+                                    </div>
+                                </div><!-- 小圖Ｃ-->
+                            </div>
+
+                            <blockquote class="wp-block-quote"><p>
+                                這裡可以寫說明
+                                </p><!-- 說明-->
+                            </blockquote>
+                        </div><!-- 小圖與說明 -->
+                        <footer class="entry-footer">
+                            <a rel='prev' class='prev_product' href='https://www.keming.com.tw/slitting/'><img
+                                    src='https://www.keming.com.tw/wp-content/themes/talon-child/images/prev_big.png'>分條圓刀系列</a><a
+                                rel='next' class='next_product'
+                                href='https://www.keming.com.tw/%e5%b0%81%e5%8f%a3-%e8%a3%81%e5%88%87%e5%88%80/'>封口-裁切刀-切刀系列<img
+                                src='https://www.keming.com.tw/wp-content/themes/talon-child/images/next_big.png'></a>
+                        </footer><!-- 切換到別的產品-->
+                    </article><!-- #post-## -->
+                </main><!-- #main -->
+            </div><!-- #primary -->
+        </div>
+
+    </div>
+</div><!-- #content -->
+
+
+<style>
+    #totop {
+        background: url(https://www.keming.com.tw/wp-content/themes/talon-child/images/bt/black-30.png) !important;
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 25px;
+        right: 15px;
+        bottom: 15px;
+        z-index: 15;
+        cursor: pointer;
+        display: none;
+    }
+</style>
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="site-info col-md-12" style=''>
+                ©愙明企業社 All rights reserved
+            </div><!-- .site-info -->
+        </div>
+    </div>
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var wpcf7 = {
+        "apiSettings": {
+            "root": "https:\/\/www.keming.com.tw\/wp-json\/contact-form-7\/v1",
+            "namespace": "contact-form-7\/v1"
+        }
+    };
+    /* ]]> */
+</script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9'></script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon-child/js/fade.js?ver=5.4.15'></script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon-child/js/mobile/mobile.js?ver=5.4.15'></script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon-child/js/top.js?ver=5.4.15'></script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon/js/skip-link-focus-fix.js?ver=20151215'></script>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon/js/scripts.min.js?ver=5.4.15'></script>
+<script type='text/javascript' src='https://www.keming.com.tw/wp-content/themes/talon/js/main.js?ver=5.4.15'></script>
+<script type='text/javascript' src='https://www.keming.com.tw/wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+<script type='text/javascript' src='https://www.keming.com.tw/wp-includes/js/masonry.min.js?ver=3.3.2'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript'
+        src='https://www.keming.com.tw/wp-content/themes/talon/js/html5shiv.js?ver=5.4.15'></script>
+<![endif]-->
+<script type='text/javascript' src='https://www.keming.com.tw/wp-includes/js/wp-embed.min.js?ver=5.4.15'></script>
+<div id="totop">
+    <i class='fas fa-angle-up'></i>
+</div>
+<!-- Template JavaScript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/theme-change.js"></script>
+<!-- owl carousel -->
+<script src="assets/js/owl.carousel.js"></script>
+<!-- script for tesimonials carousel slider -->
+<script>
+    $(document).ready(function () {
+        $("#owl-demo2").owlCarousel({
+            loop: true,
+            nav: false,
+            margin: 50,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                736: {
+                    items: 1,
+                    nav: false
+                },
+                991: {
+                    items: 2,
+                    margin: 30,
+                    nav: false
+                },
+                1080: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        })
+    })
+</script>
+<!-- //script for tesimonials carousel slider -->
+<!-- stats number counter-->
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+</script>
+<!-- //stats number counter -->
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!--//MENU-JS-->
+
+
+<!--跳轉-->
+<script>
+    function confirmRedirect(target) {
+        // 使用 confirm() 函數顯示確認視窗
+
+
+        Swal.fire({
+            title: '確定要跳轉到新頁面嗎?',
+            text: "",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: '確定!',
+            cancelButtonText: '取消'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href = target // 跳轉到指定頁面
+            }
+        })
+
+
+    }
+</script>
+<!--分頁內容圖片-->
+</body>
+
+</html>
