@@ -656,7 +656,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="about1.html">關於我們</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="product01.html">產品介紹</a>
                         </li>
                         <li class="nav-item">
@@ -760,272 +760,74 @@
                         <main id="main" class="site-main" role="main">
 
                             <style>
-                                .img_box {
+                                .machine-classification-container {
+                                    font-family: Arial, sans-serif;
                                     text-align: center;
-                                    vertical-align: top;
+                                    margin: 20px;
                                 }
-
-                                .img_box img {
-                                    border: 2px solid #ddd;
-                                    border-radius: 3px;
-                                    width: 80% !important;
-                                    height: 80% !important;
+                                .machine-classification-container h1 {
+                                    font-size: 3em;
                                 }
-
-                                /*-----------------------------------------*/
-                                .image_box {
-                                    text-align: center;
-                                    vertical-align: top;
-                                    width: 75%;
-                                    margin: 0 auto;
-                                    overflow: hidden;
-                                    position: relative;
-
-                                }
-
-                                .image_box img {
-                                    cursor: pointer;
-                                    width: 100%;
-                                    transition: all 0.6s;
-                                }
-
-                                .image_box:hover img {
-                                    transform: scale(1.4);
-                                }
-
-                                .image_box:hover .image_box_content {
-                                    bottom: 0px;
-                                    transition: all 0.3s;
-                                }
-
-                                .image_box_content {
-                                    position: absolute;
-                                    width: 100%;
-                                    height: 140px;
-                                    bottom: -90px;
-                                    background: #fff;
-                                    opacity: 0.9;
-                                    transition: all 0.3s;
-                                }
-
-                                .image_box_content h2 {
-                                    margin: 0px;
-                                    padding: 0px;
-                                    text-align: center;
-                                    line-height: 50px;
-                                    font-size: 16px !important;
-                                    color: #333;
-
-                                }
-
-                                .image_box_content a.view, .image_box_content a.view_more {
-                                    display: block;
-                                    width: 80px;
-                                    height: 35px;
-                                    line-height: 35px;
-                                    font-size: 14px;
-                                    color: #fff;
-                                    text-align: center;
-                                    background: #c01818;
-                                    margin: 0 auto;
-                                    margin-top: 10px;
-                                    border-radius: 5px;
-
-                                }
-
-                                /*-----------------------------------------*/
-                                .img_row, .img_row_category {
+                                .machine-classification-container .button-container {
                                     margin-top: 30px;
-                                    text-align: left;
                                 }
-
-                                .img_column {
-                                    width: 33%;
+                                .machine-classification-container .button-container a {
                                     display: inline-block;
-                                    text-align: center;
-                                    margin-bottom: 35px;
-                                    vertical-align: top;
+                                    margin: 15px;
+                                    padding: 20px 40px;
+                                    text-decoration: none;
+                                    color: white;
+                                    background-color: #4CAF50;
+                                    border-radius: 10px;
+                                    transition: background-color 0.3s, transform 0.3s;
+                                    font-size: 2.3em;
                                 }
-
-                                a.prev_product, a.next_product {
-
-                                    color: #fff;
-                                    background: #222;
-                                    border-radius: 5px;
-                                    margin-bottom: 5px;
+                                .machine-classification-container .button-container a:hover {
+                                    background-color: #45a049;
+                                    transform: scale(1.05);
                                 }
-
-                                a.prev_product {
-                                    padding-right: 10px;
-                                    float: left;
-                                }
-
-                                a.next_product {
-                                    float: right;
-                                    padding-left: 10px;
-                                }
-
-                                .next_product img, .prev_product img {
-                                    width: 40px !important;
-                                }
-
-                                @media (max-width: 1024px) {
-                                    .img_column {
-                                        width: 48%;
+                                @media (max-width: 600px) {
+                                    .machine-classification-container h1 {
+                                        font-size: 2em;
                                     }
-                                }
-
-                                @media (max-width: 720px) {
-                                    .image_box {
-                                        width: 95%;
-                                    }
-
-                                    .img_column {
-                                        width: 100%;
+                                    .machine-classification-container .button-container a {
+                                        padding: 15px 30px;
+                                        font-size: 1.2em;
                                     }
                                 }
                             </style>
-                            <article id="post-100"
-                                     class="post-100 post type-post status-publish format-standard has-post-thumbnail hentry category-bussiness_service post-item clearfix">
-                                <ul class="nav nav-tabs">
-                                    <li class="nav-item  active ">
-                                        <a class="nav-link  " aria-current="page" href="product01.html">破碎機</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product02.html">粉碎機</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product03.html">怪手</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product04.html">紙業長刀</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product05.html">造粒機</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product06.html">槌磨機</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product07.html">單軸撕碎機</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link " aria-current="page" href="product08.html">其他刀具</a>
-                                    </li>
-
-                                    <!--            <li class="nav-item dropdown">-->
-                                    <!--                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Dropdown</a>-->
-                                    <!--                <ul class="dropdown-menu">-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                                    <!--                    <li>-->
-                                    <!--                        <hr class="dropdown-divider">-->
-                                    <!--                    </li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
-                                    <!--                </ul>-->
-                                    <!--            </li>-->
-                                    <!--            <li class="nav-item dropdown">-->
-                                    <!--                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"-->
-                                    <!--                   aria-expanded="false">Dropdown</a>-->
-                                    <!--                <ul class="dropdown-menu">-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                                    <!--                    <li>-->
-                                    <!--                        <hr class="dropdown-divider">-->
-                                    <!--                    </li>-->
-                                    <!--                    <li><a class="dropdown-item" href="#">Separated link</a></li>-->
-                                    <!--                </ul>-->
-                                    <!--            </li>-->
-                                    <!--            <li class="nav-item">-->
-                                    <!--                <a class="nav-link" href="#">Link</a>-->
-                                    <!--            </li>-->
-                                    <!--            <li class="nav-item">-->
-                                    <!--                <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
-                                    <!--            </li>-->
-                                </ul> <!--分頁欄位-->
-
-                                <header class="entry-header">
-                                    <h1 class="custom-entry-title" style="text-align: center;"><span><i
-                                            class="fab fa-product-hunt"></i> 雙軸/四軸破碎刀</span></h1>
-                                    <div class="entry-meta">
-                                    </div><!-- .entry-meta -->
-                                </header><!-- 產品名稱 標題 -->
-
-                                <div class='img_box col-md-12' style='margin-bottom:30px;'>
-                                    <img width="768" height="576"
-                                         src="./assets/images/整套破碎刀.jpeg"
-                                         class="attachment-medium_large size-medium_large wp-post-image" alt=""
-                                         srcset=""
-                                         sizes="(max-width: 768px) 100vw, 768px"/></div>  <!--   產品大圖-->
-
-                                <div class="entry-content col-md-12">
-                                    <div>
-                                    </div>
-                                </div><!-- .entry-content 沒東西 不知道要幹嘛 -->
-
-                                <div class="entry-content" style='text-align:left;margin-top:30px;'> <!-- 各別小圖-->
-                                    <div class='img_row' id='img_row'>
-                                        <div class='img_column'>
-                                            <div class='image_box'>
-                                                <img src='./assets/images/破碎刀.jpeg'
-                                                     class='img' alt=''
-                                                     ori='./assets/images/破碎刀.jpeg'>
-                                                <div class='image_box_content'>
-                                                    <h2>P1.各式破碎刀</h2>
-                                                    <a href='javascript:;' class='view' style='margin-top:10px;'>大圖瀏覽</a>
-                                                </div>
-                                            </div>
-                                        </div> <!-- 小圖Ａ-->
-                                        <div class='img_column'>
-                                            <div class='image_box'>
-                                                <img src='./assets/images/破碎刀２.jpg'
-                                                     class='img' alt='T2.TCT鎢鋼切刀'
-                                                     ori='./assets/images/破碎刀２.jpg'>
-                                                <div class='image_box_content'>
-                                                    <h2>P2.四爪破碎刀</h2>
-                                                    <a href='javascript:;' class='view' style='margin-top:10px;'>大圖瀏覽</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- 小圖Ｂ-->
-                                        <div class='img_column'>
-                                            <div class='image_box'>
-                                                <img src='./assets/images/破碎刀3.jpg'
-                                                     class='img' alt='T3.TCT鎢鋼粉碎刀'
-                                                     ori='./assets/images/破碎刀3.jpg'>
-                                                <div class='image_box_content'>
-                                                    <h2>P2.三爪破碎刀</h2>
-                                                    <a href='javascript:;' class='view' style='margin-top:10px;'>大圖瀏覽</a>
-                                                </div>
-                                            </div>
-                                        </div><!-- 小圖Ｃ-->
-                                    </div>
-
-                                    <blockquote class="wp-block-quote">
-                                        <h3>規格 :</h3>
-                                        <p>
-                                            外徑700mm內、客製化
-                                        </p>
-                                        <h3>材質 :</h3>
-                                        <p>
-                                            鎳鉻合金鋼、工具鋼、客製化
-                                        </p>
-                                        <h3>應用領域 :</h3>
-                                        <p>
-                                            木材、家庭垃圾、塑膠、廢棄家電、廢棄家電、各式需要減容之物品
-                                        </p>
-                                        <!-- 說明-->
-                                    </blockquote>
-                                </div><!-- 小圖與說明 -->
-                                <footer class="entry-footer">
-                                    <a rel='prev' class='prev_product' href='https://www.keming.com.tw/slitting/'><img
-                                            src='https://www.keming.com.tw/wp-content/themes/talon-child/images/prev_big.png'>分條圓刀系列</a><a
-                                        rel='next' class='next_product'
-                                        href='https://www.keming.com.tw/%e5%b0%81%e5%8f%a3-%e8%a3%81%e5%88%87%e5%88%80/'>封口-裁切刀-切刀系列<img
-                                        src='https://www.keming.com.tw/wp-content/themes/talon-child/images/next_big.png'></a>
-                                </footer><!-- 切換到別的產品-->
-                            </article><!-- #post-## -->
+                            </head>
+                            <body>
+                            <div class="machine-classification-container">
+                                <h1>雙軸/四軸 破碎機</h1>
+                                <div class="button-container">
+                                    <a href="https://example.com/machine1" target="_blank">台灣自製</a>
+                                    <a href="https://example.com/machine2" target="_blank">德國穩塔</a>
+                                    <a href="https://example.com/machine3" target="_blank">美國</a>
+                                    <a href="https://example.com/machine4" target="_blank">日本</a>
+                                    <a href="https://example.com/machine4" target="_blank">自走式</a>
+                                </div>
+                                <h1>粉碎機</h1>
+                                <div class="button-container">
+                                    <a href="https://example.com/machine1" target="_blank">分類一</a>
+                                    <a href="https://example.com/machine2" target="_blank">分類二</a>
+                                    <a href="https://example.com/machine3" target="_blank">分類三</a>
+                                    <a href="https://example.com/machine4" target="_blank">分類四</a>
+                                </div>
+                                <h1>垂磨機</h1>
+                                <div class="button-container">
+                                    <a href="https://example.com/machine1" target="_blank">分類一</a>
+                                    <a href="https://example.com/machine2" target="_blank">分類二</a>
+                                    <a href="https://example.com/machine3" target="_blank">分類三</a>
+                                    <a href="https://example.com/machine4" target="_blank">分類四</a>
+                                </div>
+                                <h1>單軸撕碎機</h1>
+                                <div class="button-container">
+                                    <a href="https://example.com/machine1" target="_blank">分類一</a>
+                                    <a href="https://example.com/machine2" target="_blank">分類二</a>
+                                    <a href="https://example.com/machine3" target="_blank">分類三</a>
+                                    <a href="https://example.com/machine4" target="_blank">分類四</a>
+                                </div>
                         </main><!-- #main -->
                     </div><!-- #primary -->
                 </div>
@@ -1038,6 +840,7 @@
 
 
 <!-- footer -->
+
 <section class="w3l-footer-29-main">
     <div class="footer-29 py-5">
         <div class="container py-lg-4">
@@ -1062,9 +865,8 @@
                         <span class="fa fa-envelope-open-o"></span>
                             昶鋒刀具官方line帳號</a>
                         </li>
-                        <div class='img_box '>
                         <img src="assets/images/line.png"/>
-                        </div>
+
                         <li>
                             <a href="https://www.google.com/maps/place/429%E5%8F%B0%E4%B8%AD%E5%B8%82%E7%A5%9E%E5%B2%A1%E5%8D%80%E5%A4%A7%E5%9C%B3%E8%B7%AF42%E8%99%9F/@24.2599566,120.6784398,17z/data=!3m1!4b1!4m6!3m5!1s0x346910c5850fcc63:0x8e4c18a761ba3484!8m2!3d24.2599517!4d120.6810147!16s%2Fg%2F11c87jrzqm?hl=zh-TW&entry=ttu"><span
                                     class="fa fa-address-card"></span>
